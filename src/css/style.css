@@ -1,0 +1,65 @@
+.header {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.header__title {
+    text-align: center;
+}
+
+.content {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    width: 600px;
+    margin-bottom: 0;
+}
+
+.game {
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.status {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.hole {
+    width: 130px;
+    height: 130px;
+    margin: 10px 10px;
+    border-radius: 75%;
+    background: lightsalmon;
+}
+
+.hole_has-devil {
+    background-image: url("../img/goblin.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: azure;
+}
+
+input[type="number"] {
+    width: 100%;
+    display: block;
+    padding: 10px 20px;
+    margin: 0 0 20px 0;
+    font-family: Golos, Arial, sans-serif;
+    border: 1px solid #e2e2e2;
+    box-sizing: border-box;
+}
+
+
+input:focus {
+    outline: 1px solid #999
+}
+

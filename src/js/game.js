@@ -7,11 +7,24 @@ class DevilGame {
         this.maxMissed = 5;
         this.intervalTime = 1000;
         this.devil = new Devil(Math.floor(1 + Math.random() * 16));
+        this.createHoles();
+        this.holes = document.querySelectorAll('.hole');
     }
+
+    createHoles() {
+        const gameField = document.querySelector('.game');
+        for (let i = 1; i <= 16; i++) {
+            const hole = document.createElement('div');
+            hole.className = 'hole';
+            hole.id = `hole${i}`;
+            gameField.appendChild(hole);
+        }
+    }
+
 
     startGame() {
         this.devil.appearDevil();
-        [...this.devil.holes].forEach((element) => {
+        [...this.holes].forEach((element) => {
             element.onclick = () => {
                 if (element.classList.contains('hole_has-devil')) {
                     this.addToScore()

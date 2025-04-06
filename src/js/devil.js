@@ -1,7 +1,6 @@
 export class Devil {
     constructor(num) {
         this.hole = (index) => document.querySelector(`#hole${index}`);
-        this.holes = document.querySelectorAll('.hole')
         this.index = num
         this.oldIndex = undefined
     }
